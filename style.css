@@ -1,0 +1,395 @@
+
+body{
+background-color: crimson;
+
+}
+
+
+header {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ddd8be; /* Dorado para hover */
+}
+@media (max-width: 768px){
+    .navbar li {
+        margin-left: 0.5rem;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    background-color: #A71C1C; /* Fondo rojo */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+    
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 20px;
+    text-align: center;
+}
+
+.hero-text {
+    flex: 1;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: center ;
+}
+
+.contact-us {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.contact-us:hover {
+    background-color: #333;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 90%;
+    }
+
+}
+
+
+.companies-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.companies-text {
+    color: rgba(255, 255, 255, 0.6); /* Color de texto gris claro */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.companies-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo gris semi-transparente */
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.companies-logos img {
+    max-width: 100px; /* Ajusta el tamaño de los logos */
+    height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .companies-logos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .companies-logos img {
+        max-width: 80px;
+    }
+}
+
+.branding-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+}
+
+.branding-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 20px;
+    text-align: center;
+}
+
+.branding-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.branding-text p {
+    font-size: 1rem;
+    margin: 10px 0;
+    align-items: center;
+    color: white;
+}
+
+.branding-image {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+}
+
+.branding-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .branding-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .branding-text {
+        width: 100%;
+    }
+
+    .branding-image {
+        margin-top: 20px;
+        justify-content: center; /* Centra la imagen en móviles */
+    }
+
+    .branding-image img {
+        width: 90%;
+    }
+}
+
+
+.services-section {
+
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-section h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* 📱 Responsivo para móviles */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+.cta-section {
+
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    background-color: #C4C4C4; /* Color de la caja */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.cta-image img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.cta-text {
+    flex: 1;
+    text-align: left;
+}
+
+.cta-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 10px;
+}
+
+.cta-text p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #B71C1C;
+}
+
+
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+        background-color: #2E1737; 
+        padding: 40px 20px;
+    }
+
+    .cta-text h2,
+    .cta-text p {
+        color: white;
+    }
+
+    .cta-button {
+        background-color: black;
+    }
+    .footer{
+        background-color: #2E1737;
+    }
+}
+
+
+
+
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #000000; 
+    padding: 30px;
+    margin-top: 20px;
+    
+}
+
+
